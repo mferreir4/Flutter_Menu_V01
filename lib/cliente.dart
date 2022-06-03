@@ -12,7 +12,7 @@ class Cliente extends StatelessWidget {
     return Scaffold(
       drawer: NovoMenu(),
       appBar: AppBar(title: Text("Cliente"),),
-      body: Container(child: Text("Você que é cliente aqui no mercadinho do ze pequeno, tem descontos especiais 'My Friend'. Já te passo a dica maluco"),),
+      body: Container(child: Text("Você que é cliente aqui no mercadinho do ze pequeno, tem descontos especiais 'My Friend'. FLUTERANDO AMIGO"),),
       );
   }
 }
