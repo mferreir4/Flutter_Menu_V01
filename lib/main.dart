@@ -8,13 +8,13 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
-  @override
+
+  @override //só executa dentro desse build
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Aplicativo_Mobile_PET',
       theme: ThemeData(
-        primarySwatch: Colors.blueGrey,
+        primarySwatch: Colors.blue,
       ),
       home: const MyHomePage(title: 'PetzCão'),
     );
@@ -46,12 +46,17 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[Text("PETZCÃO")],
-        ),
-      ),
-    );
+      body:
+       Column(   
+          children:[
+          Text("Insira seu nome"), 
+          TextField(),
+          RaisedButton(onPressed: () {},     //responsável em criar boton para enviar dados para o banco
+          child: Text('Enviar'), 
+          ),
+          ]
+          ),
+          );
+       
   }
 }

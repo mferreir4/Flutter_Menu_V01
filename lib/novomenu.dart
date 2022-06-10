@@ -42,7 +42,7 @@ class NovoMenu extends StatelessWidget {
     final cor = Colors.black54;
     final corselecao = Colors.white38;
     return ListTile(
-      leading: Icon(icone, color: Colors.purpleAccent),
+      leading: Icon(icone, color: Colors.blue),
       title: Text(texto, style: TextStyle(color: cor)),
       hoverColor: corselecao,
       onTap: clique,
