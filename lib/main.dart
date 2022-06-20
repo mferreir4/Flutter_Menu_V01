@@ -46,17 +46,9 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body:
-       Column(   
-          children:[
-          Text("Insira seu nome"), 
-          TextField(),
-          RaisedButton(onPressed: () {},     //responsável em criar boton para enviar dados para o banco
-          child: Text('Enviar'), 
-          ),
-          ]
-          ),
-          );
+      
        
+         
+    );
   }
 }

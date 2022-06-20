@@ -12,11 +12,53 @@ class Cliente extends StatelessWidget {
     return Scaffold(
       drawer: NovoMenu(),
       appBar: AppBar(
-        title: Text("Cliente"),
+        title: Center(child: Text("Cadastro Retirada Pet")),
       ),
-      body: Container(
-        child: Text( "Essa parte será responsável pelo cadastro do cliente através de um formulário"),
+      body: 
+        Padding(
+          padding: const EdgeInsets.all(40.0),
+          child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          
+          children:[
+            Text( 'Preencha os dados abaixo', style: TextStyle(fontSize: 20),),
+            TextField(
+              decoration: InputDecoration(
+                labelText: 'Nome do Responsável',
+              ),
+            ),
+            TextField(
+              decoration: InputDecoration(
+                labelText: 'Nome do Pet',
+              ),
+            ),
+             TextField(
+              decoration: InputDecoration(
+                labelText: 'Endereço de retirada',
+              ),
+            ),
+             TextField(
+              decoration: InputDecoration(
+                labelText: 'CEP',
+              ),
+            ),
+             TextField(
+              decoration: InputDecoration(
+                labelText: 'Número',
+              ),
+            ),
+             TextField(
+              decoration: InputDecoration(
+                labelText: 'Complemento',
+              ),
+            ),
+
+            ElevatedButton(onPressed:() {}, child: Text('Enviar')),
+
+          ],
       ),
+        ),
     );
   }
 }
