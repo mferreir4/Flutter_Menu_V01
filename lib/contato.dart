@@ -6,8 +6,8 @@ import 'package:menu_mobile/novomenu.dart';//importar a main
 
 
 //Parte de ajuda
-class Ajuda extends StatelessWidget {
-  const Ajuda ({ Key? key }) : super(key: key);
+class Contato extends StatelessWidget {
+  const Contato ({ Key? key }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

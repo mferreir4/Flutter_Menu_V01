@@ -12,7 +12,7 @@ class Cliente extends StatelessWidget {
     return Scaffold(
       drawer: NovoMenu(),
       appBar: AppBar(
-        title: Center(child: Text("Cadastro Retirada Pet")),
+        title: Center(child: Text("CADASTRO PARA RETIRADA DO PET")),
       ),
       body: 
         Padding(
@@ -22,7 +22,7 @@ class Cliente extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           
           children:[
-            Text( 'Preencha os dados abaixo', style: TextStyle(fontSize: 20),),
+            Text( 'Preencha os dados abaixo:', style: TextStyle(fontSize: 20),),
             TextField(
               decoration: InputDecoration(
                 labelText: 'Nome do Responsável',

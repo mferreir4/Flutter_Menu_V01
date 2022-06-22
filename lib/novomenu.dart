@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:menu_mobile/ajuda.dart';
+import 'package:menu_mobile/contato.dart';
 import 'package:menu_mobile/cliente.dart';
 import 'package:menu_mobile/main.dart';
 
@@ -59,7 +59,7 @@ class NovoMenu extends StatelessWidget {
           .push(MaterialPageRoute(builder: (context) => Cliente()));
     } else if (i == 2) {
       Navigator.of(context)
-          .push(MaterialPageRoute(builder: (context) => Ajuda()));
+          .push(MaterialPageRoute(builder: (context) => Contato()));
     } else if (i == 3) {}
   }
 }
